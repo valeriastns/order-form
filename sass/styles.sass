@@ -3,7 +3,6 @@
 @import './blocks/_order-form'
 @import './blocks/_product'
 
-
 *
   padding: 0
   margin: 0
@@ -12,6 +11,7 @@
 html
   font-family: 'Montserrat', sans-serif
   font-size: 15px
+  // background: #E5E5E5
 
 .container
   width: calc( 100% - 160px)
@@ -21,9 +21,11 @@ html
   justify-content: space-between
 .product
   width: 50%
-  height: 100%
-  border: 1px solid blue
+  min-height: 100%
+  background: linear-gradient(180deg, #428A60 0%, #35734F 100%)
+  box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1)
+  border-radius: 1px
 .order-form
   width: 50%
-  height: 100%
+  min-height: 100%
   box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1)
