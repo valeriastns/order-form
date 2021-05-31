@@ -36,3 +36,57 @@
       height: 10px
       display: block
       margin-left: 10px
+  &__lang
+    width: 40%
+    position: relative
+    cursor: pointer
+    @include input-style
+    &::after
+      content: ''
+      background: url('../assets/icons/arrow-down.svg') center center/contain no-repeat
+      position: absolute
+      display: block
+      width: 15px
+      height: 7px
+      right: 12%
+    &::before
+      content: ''
+      background: url('../assets/icons/russian-flag.png') center center/contain no-repeat
+      position: absolute
+      right: 45%
+      @include flag-size
+  &__lang-list
+
+@media screen and (max-width: 640px)
+  .order-form
+    &__title
+      display: flex
+      justify-content: center
+      text-align: center
+      background: white
+      padding: 37px 0 24px
+
+    &__form
+      display: flex
+      flex-direction: column
+      padding: 28px 0 28px
+    &__content
+      width: 90%
+    &__lang
+      &::before
+        right: 36%
+    &__secure
+      height: 40px
+      background: $greyish
+      display: flex
+      justify-content: space-evenly
+      align-items: center
+    &__secure-icon
+      background: url('../assets/icons/lock.svg')
+      width: 12px
+      height: 15px
+      display: block
+    &__secure-text
+      font-weight: bold
+      font-size: .9rem
+      color: $black
