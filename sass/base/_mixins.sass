@@ -1,0 +1,29 @@
+@mixin input-style()
+  display: flex
+  flex-direction: row
+  align-items: center
+  background-color: $greyish
+  padding: 16px 0 16px 20px
+  font-family: 'Montserrat', sans-serif
+  font-weight: 600
+  border: 1px solid #E4E4E4
+  border-radius: 5px
+  margin-bottom: 20px
+  &::placeholder
+    color: #212121
+    opacity: 0.2
+
+@mixin btn-style()
+  border: none
+  outline: none
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  padding: 12px 0 12px
+  background: $green
+  color: #fff
+  border-radius: 5px
+  font-size: .9rem
+  font-weight: 600
+  cursor: pointer

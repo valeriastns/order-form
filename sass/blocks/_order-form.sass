@@ -1,0 +1,38 @@
+.order-form
+  &__title
+    text-align: center
+    font-weight: 800
+    font-size: 2rem
+    background: $greyish
+    padding: 37px 128px 32px
+  &__content
+    width: 62.5%
+    margin: 0 auto
+  &__form
+    display: flex
+    flex-direction: column
+    padding: 52px 0 60px
+  &__text
+    font-weight: 800
+    text-transform: uppercase
+    color: $black
+    padding-bottom: 10px
+    span
+      font-weight: 800
+      text-transform: uppercase
+      color: $green
+  input[type="text"]
+    width: 100%
+    @include input-style
+  input[type="tel"]
+    width: 50%
+    @include input-style
+  &__button
+    @include btn-style
+    &::after
+      content: ''
+      background: url('../assets/icons/arrow-right.svg') center center/contain no-repeat
+      width: 15px
+      height: 10px
+      display: block
+      margin-left: 10px
